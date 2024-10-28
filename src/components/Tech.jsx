@@ -85,12 +85,12 @@ const Tech = () => {
       <div className="absolute inset-0 bg-zinc-800/50 z-10" />
 
       {/* Content */}
-      <div className="max-w-5xl w-full mx-auto relative z-20 px-4">
+      <div className="max-w-7xl w-full mx-auto relative z-20 px-4 sm:px-8 lg:px-16">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-100 mb-12 text-center"
+          className="text-4xl font-bold text-gray-100 mb-16 text-center"
         >
           Technical Skills
         </motion.h2>
@@ -99,7 +99,7 @@ const Tech = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8"
         >
           {technologies.map((tech, index) => (
             <motion.div 
@@ -111,11 +111,8 @@ const Tech = () => {
                          hover:shadow-[0_0_30px_rgba(0,0,0,0.5)]
                          overflow-hidden"
             >
-              {/* Gradient Border */}
               <div className="absolute inset-0 p-[1px] rounded-lg bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-700">
                 <div className="h-full w-full bg-zinc-900/90 rounded-lg">
-                  
-                  {/* Content Container */}
                   <div className="h-full w-full flex items-center justify-center gap-3 p-3">
                     <div className="w-10 h-10 flex items-center justify-center">
                       <motion.img 
@@ -126,15 +123,12 @@ const Tech = () => {
                         transition={{ duration: 1 }}
                       />
                     </div>
-                    
                     <h3 className="text-gray-300 text-sm font-medium">
                       {tech.name}
                     </h3>
                   </div>
                 </div>
               </div>
-
-              {/* Hover Glow Effect */}
               <motion.div
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 0.1 }}
