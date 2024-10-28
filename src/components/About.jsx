@@ -9,12 +9,12 @@ const ServiceCard = ({ index, title, icon }) => (
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
-        className="xs:w-[250px] w-64 bg-gray-300 card-gradient p-[1px] rounded-[20px] shadow-card"
+        viewport={{ once: false }}
+        className="w-full sm:w-[250px] bg-zinc-800 rounded-[20px] shadow-xl hover:shadow-2xl transition-shadow duration-300"
     >
-        <div className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+        <div className="py-8 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
             <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-            <h3 className="text-taupe text-[18px] font-bold text-center">
+            <h3 className="text-gray-200 text-[18px] font-bold text-center">
                 {title}
             </h3>
         </div>
@@ -31,29 +31,33 @@ export default ServiceCard;
 
 export function About() {
     return (
-        <section className="relative bg-red-300 mt-[6rem]" id="about">
-            <motion.div 
-                variants={textVariant()}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-            >
-                <p className={styles.sectionSubText}>Introduction</p>
-                <h2 className={styles.sectionHeadText}>Overview.</h2>
-            </motion.div>
+        <section className="bg-gray-100 relative w-full min-h-screen mx-auto px-4 sm:px-8 lg:px-16" id="about">
+            {/* Text Content Container */}
+            <div className="w-full flex flex-col items-start pt-24 sm:pt-32">
+                <motion.div 
+                    variants={textVariant()}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false }}
+                >
+                    <p className={`${styles.sectionSubText} mb-2`}>Introduction</p>
+                    <h2 className={styles.sectionHeadText}>Overview.</h2>
+                </motion.div>
 
-            <motion.p
-                variants={fadeIn('', '', 0.1, 1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
-            >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                veniam dolorum ipsum doloribus.
-            </motion.p>
+                <motion.p
+                    variants={fadeIn('', '', 0.1, 1)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false }}
+                    className="mt-4 text-gray-400 text-[16px] sm:text-[18px] max-w-2xl leading-[30px]"
+                >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+                    veniam dolorum ipsum doloribus.
+                </motion.p>
+            </div>
 
-            <div className="mt-20 flex flex-wrap gap-10 justify-center">
+            {/* Services Cards Container */}
+            <div className="mt-20 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-7 sm:gap-10">
                 {services.map((service, index) => (
                     <ServiceCard 
                         key={service.title} 

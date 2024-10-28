@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import Hero from './components/Hero';
 import { About } from './components/About';
+import Tech  from './components/Tech';
 
 
 function App() {
@@ -15,8 +16,11 @@ function App() {
             <Hero />
           </div>
           <div className="bg-about bg-cover bg-center bg-no-repeat">
-          <About />
-        </div>
+            <About />
+          </div>
+          <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+            <Tech />
+          </div>
         </div>
       </BrowserRouter>
 
