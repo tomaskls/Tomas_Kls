@@ -29,6 +29,10 @@ const Tech = () => {
     { 
       name: 'Node.js',
       image: '/nodejs.png'
+    },
+    { 
+      name: 'SQL',
+      image: '/sql.png'
     }
   ];
 
@@ -64,7 +68,7 @@ const Tech = () => {
   };
 
   return (
-    <section className="min-h-screen bg-zinc-800 py-16 px-4 relative">
+    <section className="h-screen bg-zinc-800 relative flex items-center justify-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0"
@@ -81,12 +85,12 @@ const Tech = () => {
       <div className="absolute inset-0 bg-zinc-800/50 z-10" />
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto relative z-20">
+      <div className="max-w-5xl w-full mx-auto relative z-20 px-4">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-100 mb-16 text-center"
+          className="text-4xl font-bold text-gray-100 mb-12 text-center"
         >
           Technical Skills
         </motion.h2>
