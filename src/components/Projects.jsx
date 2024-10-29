@@ -180,7 +180,7 @@ const Project = () => {
   ];
 
   return (
-    <div id='projects' className="min-h-screen py-12 bg-zinc-900">
+    <section id='projects' className="min-h-screen py-12 bg-zinc-900">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           variants={textVariant(0.2)}
@@ -211,7 +211,7 @@ const Project = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

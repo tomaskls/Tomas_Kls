@@ -18,3 +18,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* Pritaikyti pagal jūsų navbar aukštį */
+}
