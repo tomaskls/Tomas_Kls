@@ -58,7 +58,7 @@ const services = [
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'Software Testing',
     icon: prototyping,
   },
 ];

@@ -24,6 +24,7 @@ import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 
 import css from './tech/css.png';
+import mysql from './tech/mysql.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
 import git from './tech/git.png';
@@ -73,6 +74,7 @@ export {
   send,
   sendHover,
   css,
+  mysql,
   docker,
   figma,
   git,

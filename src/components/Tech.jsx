@@ -1,38 +1,39 @@
 import { motion } from 'framer-motion';
-
+import {html, css, javascript, reactjs, tailwind, nodejs, git, mysql } from '../assets/index.js'
 const Tech = () => {
   const technologies = [
     { 
       name: 'HTML5',
-      image: '/html.png'
+      image: html
     },
     { 
       name: 'CSS3',
-      image: '/css3.png'
+      image: css
     },
     { 
       name: 'JavaScript',
-      image: '/javascript.png'
+      image: javascript
     },
     { 
-      name: 'React',
-      image: '/react.png'
+      name: 'ReactJS',
+      image: reactjs
     },
     { 
-      name: 'Next.js',
-      image: '/nextjs.png'
+      name: 'git',
+      image: git
     },
     { 
       name: 'Tailwind CSS',
-      image: '/tailwind.png'
+      image: tailwind
     },
     { 
-      name: 'Node.js',
-      image: '/nodejs.png'
+      name: 'NodeJS',
+      image: nodejs
     },
     { 
-      name: 'SQL',
-      image: '/sql.png'
+      name: 'MySQL',
+      image: mysql
+
     }
   ];
 
