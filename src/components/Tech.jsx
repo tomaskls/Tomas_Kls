@@ -3,20 +3,20 @@ import {html, css, javascript, reactjs, tailwind, nodejs, git, mysql } from '../
 const Tech = () => {
   const technologies = [
     { 
-      name: 'HTML5',
-      image: html
-    },
-    { 
-      name: 'CSS3',
-      image: css
-    },
-    { 
       name: 'JavaScript',
       image: javascript
     },
     { 
       name: 'ReactJS',
       image: reactjs
+    },
+    { 
+      name: 'HTML5',
+      image: html
+    },
+    { 
+      name: 'CSS3',
+      image: css
     },
     { 
       name: 'git',
@@ -91,9 +91,9 @@ const Tech = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-100 mb-16 text-center"
+          className=" text-timberWolf font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins"
         >
-          Technical Skills
+          Technologies.
         </motion.h2>
         
         <motion.div 
@@ -124,7 +124,7 @@ const Tech = () => {
                         transition={{ duration: 1 }}
                       />
                     </div>
-                    <h3 className="text-gray-300 text-sm font-medium">
+                    <h3 className="sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins">
                       {tech.name}
                     </h3>
                   </div>

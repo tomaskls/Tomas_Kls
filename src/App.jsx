@@ -26,9 +26,9 @@ function App() {
           <div className="bg-tech bg-cover bg-center bg-no-repeat ">
             <Projects />
           </div>
-          {/* <div className="bg-zinc-900 bg-tech bg-cover bg-center bg-no-repeat ">
+          <div className="bg-zinc-900 bg-tech bg-cover bg-center bg-no-repeat ">
             <Skills />
-          </div> */}
+          </div>
         </div>
       </BrowserRouter>
 

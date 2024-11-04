@@ -17,7 +17,7 @@ const SkillCard = ({ title, company, iconSrc, position }) => {
       </div>
 
       {/* Centered icon */}
-      <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#232631] flex items-center justify-center z-10">
+      <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-white flex items-center justify-center z-10">
         <img 
           src={iconSrc} 
           alt={title} 
@@ -51,34 +51,28 @@ SkillCard.propTypes = {
 const Skills = ({ title, subtitle }) => {
   const skills = [
     {
-      title: "Frontend Development",
-      company: "JavaScript, React, HTML, CSS",
-      iconSrc: "/icons/javascript.png"
+      title: "Analytical skills",
+      iconSrc: "/analytics.svg"
     },
     {
-      title: "React Development",
-      company: "Redux, Next.js, React Native",
-      iconSrc: "/icons/react.png"
+      title: "Problem-solving",
+      iconSrc: "/key-idea.svg"
     },
     {
-      title: "Backend Development",
-      company: "Python, Django, FastAPI",
-      iconSrc: "/icons/python.png"
+      title: "Result-driven",
+      iconSrc: "/website-management.svg"
     },
     {
-      title: "Cloud Services",
-      company: "AWS, Docker, CI/CD",
-      iconSrc: "/icons/aws.png"
+      title: "Multitasking",
+      iconSrc: "/multitasking.svg"
     },
     {
-      title: "Database Management",
-      company: "SQL, MongoDB, PostgreSQL",
-      iconSrc: "/icons/database.png"
+      title: "Flexibility",
+      iconSrc: "/scalability.svg"
     },
     {
-      title: "DevOps",
-      company: "Jenkins, GitHub Actions, Kubernetes",
-      iconSrc: "/icons/devops.png"
+      title: " Organizational skills",
+      iconSrc: "/idea.svg"
     }
   ];
 
@@ -125,8 +119,8 @@ Skills.propTypes = {
 };
 
 Skills.defaultProps = {
-  title: "Skills.",
-  subtitle: "What I excel at"
+  title: "Transferable Skills.",
+  subtitle: "While I'm beginning my journey in programming, I bring a wealth of transferable skills from my background in previous fields"
 };
 
 export default Skills;
