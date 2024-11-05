@@ -1,6 +1,6 @@
 import { styles } from '../styles';
 import { bwmap } from '../assets';
-import matrixBg from '../assets/backgrounds/matrix.png';
+import matrixBg from '../assets/backgrounds/matrix5.png';
 
 const Hero = () => {
   return (
@@ -38,7 +38,7 @@ const Hero = () => {
           <img 
             src={matrixBg} 
             alt="matrix background" 
-            className='h-full object-cover opacity-80'
+            className='h-full object-cover opacity-90'
           />
         </div>
       </section>
