@@ -45,8 +45,6 @@ export const ProjectCard = ({ id, name, description, image, repo, demo, active, 
           <div className="flex items-center justify-start pr-16">
             <motion.h3 
               className="font-extrabold font-sans uppercase w-[200px] h-[30px] whitespace-nowrap text-2xl text-zinc-200 tracking-wider absolute lg:bottom-28 lg:-rotate-90 lg:origin-[0,0] leading-none z-20"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
             >
               {name}
             </motion.h3>
@@ -54,7 +52,7 @@ export const ProjectCard = ({ id, name, description, image, repo, demo, active, 
         ) : (
           <>
             <motion.div 
-              className="absolute bottom-0 p-8 justify-start w-full flex-col bg-zinc-800/50 rounded-b-2xl z-20"
+              className="absolute bottom-0 p-8 justify-start w-full h-[220px] flex-col bg-zinc-800/50 rounded-b-2xl z-20"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}

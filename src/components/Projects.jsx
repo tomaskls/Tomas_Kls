@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { textVariant, fadeIn } from "../utils/motion";
 import { ProjectCard } from './ProjectCard';
-
+import { styles } from '../styles';
 
 
 
@@ -13,7 +13,7 @@ const Project = () => {
   const projects = [
     {
       id: 'project-1',
-      name: 'Airport transfers company website',
+      name: 'Airport transfers',
       description: 'An innovative project showcasing the latest web technologies and modern development practices.',
       image: '/transport_app.png',
       repo: 'https://github.com/tomaskls/my-transport-app',
@@ -21,7 +21,7 @@ const Project = () => {
     },
     {
       id: 'project-2',
-      name: 'Sewing Studio website',
+      name: 'Sewing Shop website',
       description: 'Advanced solution demonstrating cutting-edge frontend development techniques and responsive design.',
       image: '/studija.png',
       repo: 'https://github.com/tomaskls/neringos_siuvimo_studija',
@@ -29,11 +29,11 @@ const Project = () => {
     },
     {
       id: 'project-3',
-      name: 'Third Project',
+      name: 'Privat Chef',
       description: 'A sophisticated web application featuring real-time data processing and interactive user interfaces.',
-      image: '/api/placeholder/800/600',
-      repo: 'https://github.com/example/project-three',
-      demo: 'https://example.com/demo-three'
+      image: 'src/assets/projects/chef.png',
+      repo: 'https://github.com/tomaskls/chefs-website',
+      demo: 'https://privatchef.netlify.app/'
     },
     {
       id: 'project-4',
@@ -54,9 +54,10 @@ const Project = () => {
           whileInView="show"
           viewport={{ once: false }}
         >
-          <h1 className="text-4xl font-bold text-zinc-200 mb-2">Projektai</h1>
-          <p className="text-zinc-400 text-lg mb-12">
-            Peržiūrėkite mano naujausius darbus
+          <p className={`${styles.sectionSubText} `}>CASE STUDIES</p>
+          <h1 className={`${styles.sectionHeadTextLight}`}>Projects</h1>
+          <p className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+          These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
           </p>
         </motion.div>
         
@@ -65,7 +66,7 @@ const Project = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false }}
-          className="flex lg:flex-row flex-col min-h-[70vh] gap-5"
+          className="mt-4 flex lg:flex-row flex-col min-h-[70vh] gap-5"
         >
           {projects.map((project) => (
             <ProjectCard

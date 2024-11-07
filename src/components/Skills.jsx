@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { styles } from '../styles';
 
 const SkillCard = ({ title, company, iconSrc, position }) => {
   return (
@@ -9,8 +10,7 @@ const SkillCard = ({ title, company, iconSrc, position }) => {
           <div className="pr-16">
             <div className="bg-[#eaeaec] p-6 rounded-lg shadow-lg relative ml-auto mr-0 max-w-lg">
               <div className="absolute top-1/2 -mt-3 right-[-12px] border-l-[12px] border-l-[#eaeaec] border-t-[12px] border-b-[12px] border-transparent"></div>
-              <h3 className="text-2xl font-bold text-[#292929] mb-2 text-right">{title}</h3>
-              <p className="text-lg text-[#666666] text-right">{company}</p>
+              <h3 className="text-2xl font-bold text-[#292929] mb-2 text-right font-poppins">{title}</h3>
             </div>
           </div>
         )}
@@ -31,7 +31,7 @@ const SkillCard = ({ title, company, iconSrc, position }) => {
           <div className="pl-16">
             <div className="bg-[#eaeaec] p-6 rounded-lg shadow-lg relative max-w-lg">
               <div className="absolute top-1/2 -mt-3 left-[-12px] border-r-[12px] border-r-[#eaeaec] border-t-[12px] border-b-[12px] border-transparent"></div>
-              <h3 className="text-2xl font-bold text-[#292929] mb-2">{title}</h3>
+              <h3 className="text-2xl font-bold text-[#292929] mb-2 font-poppins">{title}</h3>
               <p className="text-lg text-[#666666]">{company}</p>
             </div>
           </div>
@@ -90,9 +90,9 @@ const Skills = ({ title, subtitle }) => {
 
       {/* Content */}
       <div className="relative max-w-4xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h4 className="text-lg text-[#666666] mb-2">{subtitle}</h4>
-          <h2 className="text-4xl font-bold text-[#292929]">{title}</h2>
+        <div className="text-left mb-16">
+          <h4 className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">{subtitle}</h4>
+          <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>{title}</h2>
         </div>
 
         <div className="relative">

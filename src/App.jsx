@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="relative z-0">
+        <div className="w-auto relative z-0">
           <div>
             <Navbar />
             <Hero />

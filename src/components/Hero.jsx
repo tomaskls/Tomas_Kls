@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       {/* Background Image */}
-      <div className="absolute top-0 left-0 z-[1] h-[100vh] w-screen">
+      <div className="absolute top-0 left-0 z-[1] h-[100vh] w-auto">
         <img
           src={bwmap}
           alt="world map"
