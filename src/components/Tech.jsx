@@ -91,7 +91,7 @@ const Tech = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className=" text-timberWolf font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins"
+          className=" text-timberWolf mb-20 font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins"
         >
           Technologies.
         </motion.h2>
@@ -112,8 +112,8 @@ const Tech = () => {
                          hover:shadow-[0_0_30px_rgba(0,0,0,0.5)]
                          overflow-hidden"
             >
-              <div className="absolute inset-0 p-[1px] rounded-lg bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-700">
-                <div className="h-full w-full bg-zinc-900/90 rounded-lg">
+              <div className="absolute inset-0 p-[1px] rounded-[30px] bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-700">
+                <div className="h-full w-full bg-zinc-900/90 rounded-[30px]">
                   <div className="h-full w-full flex items-center justify-center gap-3 p-3">
                     <div className="w-10 h-10 flex items-center justify-center">
                       <motion.img 

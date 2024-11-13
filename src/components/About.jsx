@@ -56,9 +56,7 @@ export function About() {
                         whileInView="show"
                         viewport={{ once: false }}
                         className="mt-4 text-gray-600 text-[16px] sm:text-[18px] max-w-3xl leading-[30px]"
-                    >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                        veniam dolorum ipsum doloribus.
+                    >I`&apos` a recent graduate of the Baltic Institute of Technology (BIT), where I honed my skills in the exciting world of programming. With a strong foundation in React and JavaScript, I am eager to continue my journey as a software developer. <br /> My primary focus lies in front-end development, particularly working with React and JavaScript to build dynamic and responsive web applications. I enjoy the creativity and problem-solving that comes with coding, and I`&apos`m always keen to learn and implement the latest technologies and best practices.
                     </motion.p>
                 </div>
 

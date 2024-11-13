@@ -25,7 +25,7 @@ const Hero = () => {
             <div className='ml-[10%] max-w-3xl'>
               <h2 className={`${styles.heroHeadText} text-zinc-800 font-poppins leading-tight`}>
                 HI, I&#39;M <br />
-                <span className="sm:text-[90px] text-[50px] font-mova font-extrabold text-chicago-400 tracking-wider">
+                <span className="sm:text-[90px] text-[50px] text-battleGray font-poppins font-extrabold text-chicago-400 tracking-wider">
                   TOM&#39;as
                 </span>
               </h2>

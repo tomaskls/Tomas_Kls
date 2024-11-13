@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} bg-gray-100 w-full flex items-center py-2 fixed 
+      className={`${styles.paddingX} w-full flex items-center py-2 fixed 
       top-0 z-30 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -70,7 +70,7 @@ export const Navbar = () => {
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
+                    } text-[48px] font-bold ml-10 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);

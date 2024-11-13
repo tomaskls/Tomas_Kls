@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import { styles } from '../styles';
 
-const SkillCard = ({ title, company, iconSrc, position }) => {
+const SkillCard = ({ title, iconSrc, position }) => {
   return (
     <div className="flex items-center w-full my-8 relative">
       {/* Left side */}
       <div className="flex-1">
         {position === 'left' && (
           <div className="pr-16">
-            <div className="bg-[#eaeaec] p-6 rounded-lg shadow-lg relative ml-auto mr-0 max-w-lg">
+            <div className="bg-[#eaeaec] p-6 rounded-lg shadow-lg relative ml-auto mr-0 max-w-lg z-20">
               <div className="absolute top-1/2 -mt-3 right-[-12px] border-l-[12px] border-l-[#eaeaec] border-t-[12px] border-b-[12px] border-transparent"></div>
               <h3 className="text-2xl font-bold text-[#292929] mb-2 text-right font-poppins">{title}</h3>
             </div>
@@ -32,7 +32,6 @@ const SkillCard = ({ title, company, iconSrc, position }) => {
             <div className="bg-[#eaeaec] p-6 rounded-lg shadow-lg relative max-w-lg">
               <div className="absolute top-1/2 -mt-3 left-[-12px] border-r-[12px] border-r-[#eaeaec] border-t-[12px] border-b-[12px] border-transparent"></div>
               <h3 className="text-2xl font-bold text-[#292929] mb-2 font-poppins">{title}</h3>
-              <p className="text-lg text-[#666666]">{company}</p>
             </div>
           </div>
         )}
@@ -43,13 +42,16 @@ const SkillCard = ({ title, company, iconSrc, position }) => {
 
 SkillCard.propTypes = {
   title: PropTypes.string.isRequired,
-  company: PropTypes.string.isRequired,
   iconSrc: PropTypes.string.isRequired,
   position: PropTypes.oneOf(['left', 'right']).isRequired
 };
 
-const Skills = ({ title, subtitle }) => {
+const Skills = ({ 
+  title = "Transferable Skills.", // default reikšmė
+  subtitle = "While I'm beginning my journey in programming, I bring a wealth of transferable skills from my background in previous fields" // default reikšmė
+}) => {
   const skills = [
+
     {
       title: "Analytical skills",
       iconSrc: "/analytics.svg"
@@ -114,13 +116,9 @@ const Skills = ({ title, subtitle }) => {
 };
 
 Skills.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 };
 
-Skills.defaultProps = {
-  title: "Transferable Skills.",
-  subtitle: "While I'm beginning my journey in programming, I bring a wealth of transferable skills from my background in previous fields"
-};
 
 export default Skills;
