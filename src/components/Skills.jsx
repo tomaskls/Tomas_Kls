@@ -120,5 +120,4 @@ Skills.propTypes = {
   subtitle: PropTypes.string
 };
 
-
 export default Skills;

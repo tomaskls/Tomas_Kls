@@ -13,12 +13,12 @@ const ServiceCard = ({ index, title, icon }) => (
         className="w-full sm:w-[250px] bg-zinc-800 rounded-[20px] shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
     >
         <div className="py-8 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-            <motion.img 
-                src={icon} 
-                alt={title} 
+            <motion.img
+                src={icon}
+                alt={title}
                 className="w-16 h-16 object-contain"
                 whileHover={{ rotate: 360 }}
-                transition={{ duration: 1 }} 
+                transition={{ duration: 1 }}
             />
             <h3 className="text-gray-200 text-[18px] font-bold text-center">
                 {title}
@@ -39,7 +39,7 @@ export function About() {
             <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-24">
                 {/* Text Content Container */}
                 <div className="w-full flex flex-col items-start">
-                    <motion.div 
+                    <motion.div
                         variants={textVariant()}
                         initial="hidden"
                         whileInView="show"
@@ -56,12 +56,10 @@ export function About() {
                         whileInView="show"
                         viewport={{ once: false }}
                         className="mt-4 text-gray-600 text-[16px] sm:text-[18px] max-w-3xl leading-[30px]"
-                    >I`&apos` a recent graduate of the Baltic Institute of Technology (BIT), where I honed my skills in the exciting world of programming. With a strong foundation in React and JavaScript, I am eager to continue my journey as a software developer. <br /> My primary focus lies in front-end development, particularly working with React and JavaScript to build dynamic and responsive web applications. I enjoy the creativity and problem-solving that comes with coding, and I`&apos`m always keen to learn and implement the latest technologies and best practices.
+                    >I&apos;m a recent graduate of the Baltic Institute of Technology (BIT), where I honed my skills in the exciting world of programming. With a strong foundation in React and JavaScript, I am eager to continue my journey as a software developer. <br /> My primary focus lies in front-end development, particularly working with React and JavaScript to build dynamic and responsive web applications. I enjoy the creativity and problem-solving that comes with coding, and I`&apos`m always keen to learn and implement the latest technologies and best practices.
                     </motion.p>
                 </div>
-
-                {/* Services Cards Container */}
-                <motion.div 
+                <motion.div
                     variants={fadeIn('up', 'spring', 0.5, 1)}
                     initial="hidden"
                     whileInView="show"
@@ -69,10 +67,10 @@ export function About() {
                     className="mt-20 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-7 sm:gap-10"
                 >
                     {services.map((service, index) => (
-                        <ServiceCard 
-                            key={service.title} 
-                            index={index} 
-                            {...service} 
+                        <ServiceCard
+                            key={service.title}
+                            index={index}
+                            {...service}
                         />
                     ))}
                 </motion.div>
