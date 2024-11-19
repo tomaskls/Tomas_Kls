@@ -4,7 +4,6 @@ import { styles } from '../styles';
 const SkillCard = ({ title, iconSrc, position }) => {
   return (
     <div className="flex items-center w-full my-8 relative">
-      {/* Left side */}
       <div className="flex-1">
         {position === 'left' && (
           <div className="pr-16">
@@ -16,16 +15,14 @@ const SkillCard = ({ title, iconSrc, position }) => {
         )}
       </div>
 
-      {/* Centered icon */}
       <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-white flex items-center justify-center z-10">
-        <img 
-          src={iconSrc} 
-          alt={title} 
+        <img
+          src={iconSrc}
+          alt={title}
           className="w-7 h-7 object-contain"
         />
       </div>
 
-      {/* Right side */}
       <div className="flex-1">
         {position === 'right' && (
           <div className="pl-16">
@@ -46,7 +43,7 @@ SkillCard.propTypes = {
   position: PropTypes.oneOf(['left', 'right']).isRequired
 };
 
-const Skills = ({ 
+const Skills = ({
   title = "Transferable Skills.", // default reikšmė
   subtitle = "While I'm beginning my journey in programming, I bring a wealth of transferable skills from my background in previous fields" // default reikšmė
 }) => {
@@ -80,9 +77,8 @@ const Skills = ({
 
   return (
     <div className="relative rounded-tl-[64px] rounded-br-[64px] overflow-hidden">
-      {/* Background with zinc base and gray overlay */}
       <div className="absolute inset-0 bg-zinc-800 rounded-tl-[64px] rounded-br-[64px]">
-        <div 
+        <div
           className="absolute inset-0 bg-gray-100 origin-top-right"
           style={{
             clipPath: 'polygon(0 0, 100% 0, 100% 30%, 0% 100%)'
@@ -90,7 +86,6 @@ const Skills = ({
         />
       </div>
 
-      {/* Content */}
       <div className="relative max-w-4xl mx-auto px-4 py-16">
         <div className="text-left mb-16">
           <h4 className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">{subtitle}</h4>
@@ -98,10 +93,7 @@ const Skills = ({
         </div>
 
         <div className="relative">
-          {/* Vertical Timeline Line */}
           <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-[#232631]" />
-
-          {/* Skills Cards */}
           {skills.map((skill, index) => (
             <SkillCard
               key={index}

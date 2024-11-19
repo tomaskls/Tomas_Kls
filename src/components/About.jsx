@@ -37,7 +37,6 @@ export function About() {
     return (
         <section className="bg-gray-100 relative w-full min-h-screen mx-auto" id="about">
             <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-24">
-                {/* Text Content Container */}
                 <div className="w-full flex flex-col items-start">
                     <motion.div
                         variants={textVariant()}

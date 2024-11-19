@@ -5,6 +5,9 @@ import { About } from './components/About';
 import Tech  from './components/Tech';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+// import ContactComponent from './components/Contacts';
+import Contact from './components/Contacts';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -29,6 +32,11 @@ function App() {
           <div className="bg-zinc-900 bg-tech bg-cover bg-center bg-no-repeat ">
             <Skills />
           </div>
+          <div>
+            {/* <ContactComponent /> */}
+            <Contact />
+          </div>
+          <Footer />
         </div>
       </BrowserRouter>
 
