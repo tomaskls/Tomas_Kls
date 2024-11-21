@@ -12,7 +12,7 @@ const Project = () => {
       id: 'project-1',
       name: 'Airport transfers',
       description: 'An innovative project showcasing the latest web technologies and modern development practices.',
-      image: '/transport_app.png',
+      image: 'src/assets/projects/transport_app.png',
       repo: 'https://github.com/tomaskls/my-transport-app',
       demo: 'https://my-transport-app.vercel.app/'
     },
@@ -20,7 +20,7 @@ const Project = () => {
       id: 'project-2',
       name: 'Sewing Shop website',
       description: 'Advanced solution demonstrating cutting-edge frontend development techniques and responsive design. Modular CSS for styling. A strong emphasis on technical SEO was placed to enhance the website search engine visibility and performance ',
-      image: '/studija.png',
+      image: 'src/assets/projects/studija.png',
       repo: 'https://github.com/tomaskls/neringos_siuvimo_studija',
       demo: 'https://www.neringos-siuvimo-studija.lt/'
     },

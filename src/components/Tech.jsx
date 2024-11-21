@@ -73,7 +73,7 @@ const Tech = () => {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/nairobi.png')",
+          backgroundImage: "url('src/assets/backgrounds/nairobi.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

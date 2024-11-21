@@ -51,27 +51,27 @@ const Skills = ({
 
     {
       title: "Analytical skills",
-      iconSrc: "/analytics.svg"
+      iconSrc: "src/assets/icons/analytics.svg"  
     },
     {
       title: "Problem-solving",
-      iconSrc: "/key-idea.svg"
+      iconSrc: "src/assets/icons/key-idea.svg"
     },
     {
       title: "Result-driven",
-      iconSrc: "/website-management.svg"
+      iconSrc: "src/assets/icons/website-management.svg"
     },
     {
       title: "Multitasking",
-      iconSrc: "/multitasking.svg"
+      iconSrc: "src/assets/icons/multitasking.svg"
     },
     {
       title: "Flexibility",
-      iconSrc: "/scalability.svg"
+      iconSrc: "src/assets/icons/scalability.svg"
     },
     {
       title: " Organizational skills",
-      iconSrc: "/idea.svg"
+      iconSrc: "src/assets/icons/idea.svg"
     }
   ];
 
