@@ -21,7 +21,7 @@ const Project = () => {
       name: 'Sewing Shop website',
       description: 'Advanced solution demonstrating cutting-edge frontend development techniques and responsive design. Modular CSS for styling. A strong emphasis on technical SEO was placed to enhance the website search engine visibility and performance ',
       image: 'src/assets/projects/studija.png',
-      repo: 'https://github.com/tomaskls/neringos_siuvimo_studija',
+      repo: 'https://github.com/tomaskls/Siuvimo-Studija-nextjs',
       demo: 'https://www.neringos-siuvimo-studija.lt/'
     },
     {
