@@ -1,5 +1,11 @@
 import PropTypes from 'prop-types';
 import { styles } from '../styles';
+import analiticIcon from '../assets/icons/analytics.svg'
+import keyIcon from '../assets/icons/key-idea.svg'
+import managementIcon from '../assets/icons/website-management.svg'
+import multitaskingIcon from '../assets/icons/multitasking.svg'
+import scalabilityIcon from '../assets/icons/scalability.svg'
+import ideaIcon from '../assets/icons/idea.svg'
 
 const SkillCard = ({ title, iconSrc, position }) => {
   return (
@@ -51,27 +57,27 @@ const Skills = ({
 
     {
       title: "Analytical skills",
-      iconSrc: "src/assets/icons/analytics.svg"  
+      iconSrc: analiticIcon  
     },
     {
       title: "Problem-solving",
-      iconSrc: "src/assets/icons/key-idea.svg"
+      iconSrc: keyIcon
     },
     {
       title: "Result-driven",
-      iconSrc: "src/assets/icons/website-management.svg"
+      iconSrc: managementIcon
     },
     {
       title: "Multitasking",
-      iconSrc: "src/assets/icons/multitasking.svg"
+      iconSrc: multitaskingIcon
     },
     {
       title: "Flexibility",
-      iconSrc: "src/assets/icons/scalability.svg"
+      iconSrc: scalabilityIcon
     },
     {
       title: " Organizational skills",
-      iconSrc: "src/assets/icons/idea.svg"
+      iconSrc: ideaIcon
     }
   ];
 
