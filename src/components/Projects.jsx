@@ -12,7 +12,7 @@ const Project = () => {
       id: 'project-1',
       name: 'Airport transfers',
       description: 'An innovative project showcasing the latest web technologies and modern development practices.',
-      image: 'src/assets/projects/transport_app.png',
+      image: '/projects/transport_app.png',
       repo: 'https://github.com/tomaskls/my-transport-app',
       demo: 'https://my-transport-app.vercel.app/'
     },
@@ -20,7 +20,7 @@ const Project = () => {
       id: 'project-2',
       name: 'Sewing Shop website',
       description: 'Advanced solution demonstrating cutting-edge frontend development techniques and responsive design. Modular CSS for styling. A strong emphasis on technical SEO was placed to enhance the website search engine visibility and performance ',
-      image: 'src/assets/projects/studija.png',
+      image: '/projects/studija.png',
       repo: 'https://github.com/tomaskls/Siuvimo-Studija-nextjs',
       demo: 'https://www.neringos-siuvimo-studija.lt/'
     },
@@ -28,17 +28,17 @@ const Project = () => {
       id: 'project-3',
       name: 'Privat Chef',
       description: 'This single-page website is built with React.js, Vite, and Material-UI. It offers a sleek and responsive user interface designed for a seamless browsing experience. Utilizing modern technologies ensures quick load times and a professional aesthetic.',
-      image: 'src/assets/projects/chef.png',
+      image: '/projects/chef.png',
       repo: 'https://github.com/tomaskls/Chef_website',
       demo: 'https://cheffabio.netlify.app/'
     },
     {
       id: 'project-4',
       name: 'Comming Soon',
-      description: 'On the way',
-      image: '/api/placeholder/800/600',
-      repo: 'https://github.com/example/project-four',
-      demo: 'https://example.com/demo-four'
+      // description: 'On the way',
+      // image: '/api/placeholder/800/600',
+      // repo: 'https://github.com/example/project-four',
+      // demo: 'https://example.com/demo-four'
     }
   ];
 
