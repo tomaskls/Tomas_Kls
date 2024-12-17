@@ -35,10 +35,10 @@ const Project = () => {
     {
       id: 'project-4',
       name: 'Comming Soon',
-      // description: 'On the way',
-      // image: '/api/placeholder/800/600',
-      // repo: 'https://github.com/example/project-four',
-      // demo: 'https://example.com/demo-four'
+      description: 'On the way',
+      image: '/projects/comming.png',
+      repo: 'https://github.com/example/project-four',
+      demo: 'https://example.com/demo-four'
     }
   ];
 
