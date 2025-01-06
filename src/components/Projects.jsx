@@ -10,12 +10,13 @@ const Project = () => {
   const projects = [
     {
       id: 'project-1',
-      name: 'Airport transfers',
-      description: 'An innovative project showcasing the latest web technologies and modern development practices.',
-      image: '/projects/transport_app.png',
-      repo: 'https://github.com/tomaskls/my-transport-app',
-      demo: 'https://my-transport-app.vercel.app/'
+      name: 'Media House',
+      description: 'Modern web development agency website built with Next.js framework. Features Next UI components for sleek design, styled with Tailwind CSS. Multilanguage support (LT/EN).',
+      image: '/projects/tmh.png',
+      repo: 'https://github.com/tomaskls/TMH_nextjs',
+      demo: 'https://www.tmh.lt'
     },
+
     {
       id: 'project-2',
       name: 'Sewing Shop website',
@@ -34,12 +35,13 @@ const Project = () => {
     },
     {
       id: 'project-4',
-      name: 'Comming Soon',
-      description: 'On the way',
-      image: '/projects/comming.png',
-      repo: 'https://github.com/example/project-four',
-      demo: 'https://example.com/demo-four'
-    }
+      name: 'Airport transfers',
+      description: 'An innovative project showcasing the latest web technologies and modern development practices.',
+      image: '/projects/transport_app.png',
+      repo: 'https://github.com/tomaskls/my-transport-app',
+      demo: 'https://my-transport-app.vercel.app/'
+    },
+
   ];
 
   return (
